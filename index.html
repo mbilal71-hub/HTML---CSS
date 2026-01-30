@@ -5,55 +5,55 @@
     <meta charset="UTF-8">
     <meta name="description" content="i am practicing html">
     <meta name="keywords" content="html,css,js">
-    <!-- <meta http-equiv="refresh" content="5"> -->
+    <meta http-equiv="refresh" content="5">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML & CSS</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="/home.png">
-    <style>
-        body {
-            background-color: #515151;
+    <!-- <style> FOR GRID
+    body {
+    background-color: #515151;
+    }
 
-        }
+    .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+    grid-auto-rows: minmax(200px, auto);
+    grid-auto-columns: minmax(200px, auto);
+    column-gap: 50px;
+    row-gap: 50px;
 
-        .container {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-            gap: 15px;
-            grid-auto-rows: minmax(200px, auto);
-            grid-auto-columns: minmax(200px, auto);
-            column-gap: 50px;
-            row-gap: 50px;
+    }
 
-        }
+    .items {
+    background-color: rgb(217, 165, 73);
+    border: 1px solid black;
+    border-radius: 5px;
+    }
 
-        .items {
-            background-color: rgb(217, 165, 73);
-            border: 1px solid black;
-            border-radius: 5px;
-        }
+    #item1 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    }
 
-        #item1 {
-            grid-column-start: 1;
-            grid-column-end: 4;
-        }
+    .item-1-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 15px;
+    row-gap: 15px;
+    padding: 10px 10px;
+    }
 
-        .item-1-container {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            column-gap: 15px;
-            row-gap: 15px;
-            padding: 10px 10px;
-        }
+    .nested {
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 10px;
+    grid-auto-rows: minmax(200, auto);
+    grid-auto-columns: minmax(200, auto);
+    }
+    </style> -->
 
-        .nested {
-            padding: 5px;
-            border: 1px solid black;
-            border-radius: 10px;
-            grid-auto-rows: minmax(200, auto);
-            grid-auto-columns: minmax(200, auto);
-        }
-    </style>
 </head>
 
 
@@ -97,12 +97,14 @@
         <option value="Isb">Isb</option>
     </select> -->
 
-    <!-- <div class="one"></div>
+    <div class="one"></div>
     <div class="two"></div>
 
-    <div class="loader"></div> -->
+    <div class="loader"></div>
 
-    <div class="container">
+    <!-- GRID -->
+
+    <!-- <div class="container">
         <div class="items item-1-container" id="item1">
             <div class="nested">box in the box 1</div>
             <div class="nested">box in the box 2</div>
@@ -113,8 +115,18 @@
         <div class="items">Box 3</div>
         <div class="items">Box 4</div>
         <div class="items">Box 5</div>
-    </div>
+    </div> -->
 
+    <!-- FLEX BOX -->
+    <!-- 
+    <div class="flexitem">box 1</div>
+    <div class="flexitem">box 2</div>
+    <div class="flexitem">box 3</div>
+    <div class="flexitem">box 4</div>
+    <div class="flexitem">box 5</div>
+    <div class="flexitem">box 6</div>
+    <div class="flexitem">box 7</div>
+    <div class="flexitem">box 8</div> -->
 
 
 
