@@ -10,7 +10,52 @@
     <title>HTML & CSS</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="/home.png">
+    <style>
+        body {
+            background-color: #515151;
+
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 15px;
+            grid-auto-rows: minmax(200px, auto);
+            grid-auto-columns: minmax(200px, auto);
+            column-gap: 50px;
+            row-gap: 50px;
+
+        }
+
+        .items {
+            background-color: rgb(217, 165, 73);
+            border: 1px solid black;
+            border-radius: 5px;
+        }
+
+        #item1 {
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+
+        .item-1-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: 15px;
+            row-gap: 15px;
+            padding: 10px 10px;
+        }
+
+        .nested {
+            padding: 5px;
+            border: 1px solid black;
+            border-radius: 10px;
+            grid-auto-rows: minmax(200, auto);
+            grid-auto-columns: minmax(200, auto);
+        }
+    </style>
 </head>
+
 
 <body>
 
@@ -52,11 +97,23 @@
         <option value="Isb">Isb</option>
     </select> -->
 
-    <div class="one"></div>
+    <!-- <div class="one"></div>
     <div class="two"></div>
 
-    <div class="loader"></div>
+    <div class="loader"></div> -->
 
+    <div class="container">
+        <div class="items item-1-container" id="item1">
+            <div class="nested">box in the box 1</div>
+            <div class="nested">box in the box 2</div>
+            <div class="nested">box in the box 3</div>
+            <div class="nested">box in the box 4</div>
+        </div>
+        <div class="items">Box 2</div>
+        <div class="items">Box 3</div>
+        <div class="items">Box 4</div>
+        <div class="items">Box 5</div>
+    </div>
 
 
 
